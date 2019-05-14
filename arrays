@@ -1,0 +1,4 @@
+type1: 
+  create val id=arrayOf(1,2,3,4,5)
+type2:
+  val asc=Array(5,{i->i*2})
