@@ -1,0 +1,7 @@
+readLine() : to read input lines
+name.valueOf(readLine())  : fetch value 
+
+*readLines = other than string values are explicitly converted into correspnding data types
+
+*scanner : to import data type other than string 
+library : import.java.util.scanner
