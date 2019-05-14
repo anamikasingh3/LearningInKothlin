@@ -1,0 +1,1 @@
+throw Myexp("this throws an exception")
