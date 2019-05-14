@@ -1,0 +1,4 @@
+println("    ") : displays in console
+fun funname(args: Array<String>){}    : function with function name as funname and with argument as array of strings
+var varname=""  : mutable(can be changed)
+val valname=""  :immuatble(cannot be changed)
