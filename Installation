@@ -1,0 +1,4 @@
+*install JDK
+*setup JDK and JRE path
+*install IDE
+* for using command line to run , we use " kotlinc hello.kt -include-runtime-d hello.jar
