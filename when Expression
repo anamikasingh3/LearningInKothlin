@@ -1,0 +1,7 @@
+var varfinalval= when(num)
+{
+1->"val1"
+2->"val2"
+3->"val3"
+}
+// it works exactluy like switch case 
