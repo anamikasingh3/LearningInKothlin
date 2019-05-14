@@ -1,0 +1,7 @@
+val marks=arrayOf(1,2,3,4,5,6,7,8,9,0}
+for(item of marks){
+println("marks")
+}
+
+also
+for(i in 1..5) // here i goes from 1 to 5 
