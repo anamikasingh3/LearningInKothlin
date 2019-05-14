@@ -5,3 +5,5 @@ val valname=""  :immuatble(cannot be changed)
 break           :close nearest loop
 break@loop      :terminate specific loop
 continue        :repeat a set of codes
+!==             :negation
+===             : true if and only if
