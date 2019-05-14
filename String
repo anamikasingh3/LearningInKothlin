@@ -1,0 +1,3 @@
+length:Int
+length:Int Range    //range of valid characters
+lastIndex:Int
