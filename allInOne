@@ -1,0 +1,83 @@
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+
+class MainActivity : AppCompatActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+
+println("declare variables and print")
+            var str: String = "Hello, students!"
+            val age: Int = 23
+
+            println(str)
+            println("What's up?")
+            print(age)
+
+        println("******************")
+//***********************************
+        println("using when")
+        var a=1;
+        when(a){
+            1-> println("value of a is 1");
+            2->println("value is 2");
+
+        }
+        //***************
+
+        println("*************************");
+        println("using while loop")
+        var i=0;
+        while(i<5){
+            println(i)
+            i++
+
+        }
+        println("using if else")
+if(i==4)
+{
+    println("final value is 4");
+}
+        else{
+    println("final value is 5");
+}
+ //*******************************
+        println("printing array in for loop using arrayof libarary")
+        val marks = arrayOf(80,85,60,90,70)
+        for(item in marks){
+            println(item)
+
+        }
+        println("printing array in for loop using constructor")
+        val asc = Array(5, { i -> i * 2 })
+        for (i in 0..4){
+            println(asc[i]);
+        }
+
+        println("********* ")
+        print("for (i in 1..5) print(i) = ")
+        for (i in 1..5) print(i)
+        println()
+
+        //*****************
+        println("for using break in the same");
+        for (i in 1..5)
+        {
+            print(i)
+            if(i==3)
+            break;
+        }
+        println()
+        println("using continue")
+        for (i in 1..5)
+        {
+
+            if(i==3)
+            {
+                continue;}
+            print(i)
+        }
+
+        //*******************
+    }}
