@@ -2,9 +2,19 @@ types :
   standard (predefined)
   userdefined
   recursion function(function inside function)
-  tail recursion(operation and recursion)
+  tail recursion(operation then recursion)
+  
   * if arguments are passed then value is taken in function else default value is taken
   higher order function: function as an argument to another function
+  
   inline function: inhances functioning of higher order functions
   (it tells compiler to copy parameters and functions to the call site )
+inline fun namre(value)
+
+* lambda :
+  function with no name 
+  syntax : {}
   
+  
+
+////////////////////////////////////////
