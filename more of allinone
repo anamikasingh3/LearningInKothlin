@@ -1,0 +1,181 @@
+import android.support.v7.app.AppCompatActivity
+import android.os.Bundle
+import java.lang.Exception
+
+class MainActivity : AppCompatActivity() {
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        println("for normal funcytion using predefined function and user defined function")
+
+roots(25)
+println(" by using recursive function")
+        recc(2)
+        println("by using tailrecursibve function")
+        tailrec(5,1)
+println("using lambda function")
+        val myLambda: (Int) -> Unit= {s: Int -> println(s) }
+        println("using lambda function with higher order")
+        addNumber(5,10,myLambda)
+println("*********************")
+println("STRING")
+        nam()
+        println("*********************")
+        println("Exception")
+        excc()
+        println("declare variables and print")
+        var str: String = "Hello, students!"
+        val age: Int = 23
+
+        println(str)
+        println("What's up?")
+        print(age)
+
+        println("******************")
+//***********************************
+        println("using when")
+        var a = 1;
+        when (a) {
+            1 -> println("value of a is 1");
+            2 -> println("value is 2");
+
+        }
+        //***************
+
+        println("*************************");
+        println("using while loop")
+        var i = 0;
+        while (i < 5) {
+            println(i)
+            i++
+
+        }
+        println("using if else")
+        if (i == 4) {
+            println("final value is 4");
+        } else {
+            println("final value is 5");
+        }
+        //*******************************
+        println("printing array in for loop using arrayof libarary")
+        val marks = arrayOf(80, 85, 60, 90, 70)
+        for (item in marks) {
+            println(item)
+
+        }
+        println("printing array in for loop using constructor")
+        val asc = Array(5, { i -> i * 2 })
+        for (i in 0..4) {
+            println(asc[i]);
+        }
+
+        println("********* ")
+        print("for (i in 1..5) print(i) = ")
+        for (i in 1..5) print(i)
+        println()
+        println("********* ")
+        print("using continue")
+        for (i in asc) {
+            if (i == 4)
+                continue;
+            print(i)
+
+        }
+        //*****************
+        println("for using break in the same")
+        for (i in 1..5) {
+            print(i)
+            if (i == 3)
+                break;
+        }
+
+    }
+
+
+
+
+    fun recc(  count:Int=2) {
+
+
+
+        if (count <= 5) {
+            println(count);
+
+            recc(count+1);
+        }
+    }
+
+
+    fun tailrec(num:Int,root:Int)
+    {
+      if(num==1) {
+          println(root);
+      }else{
+          tailrec(num-1,root*num)}
+
+      }
+
+
+
+
+    fun roots(number:Int):Double {
+        var result = Math.sqrt(number.toDouble())
+        println(result)
+        return result
+    }
+
+    fun addNumber(a: Int, b: Int, mylambda: (Int) -> Unit ){   //high level function lambda as parameter
+        val add = a + b
+        mylambda(add) // println(add)
+    }
+//**************************************************************************************
+    //**************************************************************************************
+    //**************************************************************************************
+    //for every thing realted to sring array and exception
+fun nam()
+{ println("declaring string")
+    var st="fjnfkjnfkdl"
+    println(st[5])
+    println(st.length)
+    print("for eascape character")
+    println("\n")
+    print("nextLine")
+    println("using raw with and without trim")
+    println(""" hejkkx
+        |nfkdnk
+        |nfkdnkf
+    """.trimMargin())
+    println(""" hejkkx
+        |nfkdnk
+        |nfkdnkf
+    """)
+
+}
+
+    //**************************************************************************************
+    //**************************************************************************************
+    //**************************************************************************************
+    //for exception
+fun excc(){
+        var arr=arrayOf(1,2,1,4,6,6)
+        println("exception using try and catch")
+        try {
+            var a=10
+            var b=0
+            a=a/b;
+            arr.set(7,0)
+
+        }
+        catch (e : StringIndexOutOfBoundsException){
+            println(e)
+        }
+        catch (e : ArithmeticException){
+            println(e)
+        }
+    }
+
+
+}
