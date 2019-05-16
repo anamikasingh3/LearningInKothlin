@@ -1,0 +1,19 @@
+   //for exception
+fun excc(){
+        var arr=arrayOf(1,2,1,4,6,6)
+        println("exception using try and catch")
+        try {
+            var a=10
+            var b=0
+            a=a/b;
+            arr.set(7,0)
+
+        }
+        catch (e : StringIndexOutOfBoundsException){
+            println(e)
+            Log.d("", "$e")
+        }
+        catch (e : ArithmeticException){
+            println(e)
+        }
+    }
