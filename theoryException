@@ -1,0 +1,4 @@
+# try: used when you doubt a set of codes that it will show error\
+# catch : to catch errors found in try
+# finally: used to execute important codes even when exception is not handled
+# throw : to throw exception purposely
