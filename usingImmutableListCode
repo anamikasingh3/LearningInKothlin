@@ -1,0 +1,36 @@
+fun collec()
+{
+    var myArray = Array<Int>(5){0}
+    var myArray1 = arrayOf(1,10,4,6,15)
+
+    println("IMMUTABLE")
+    println("immutable-listOf")
+    var list = listOf("Ajay","Vijay","Prakash")
+    println("immutable-mapOf")
+    val myMap = mapOf<Int,String>(1 to "Ajay", 4 to "Vijay", 3 to "Prakash")
+
+    println(myMap.getValue(4))
+    println("immutable-display map")
+    for(key in myMap.keys){
+        println("Element at key $key = ${myMap.get(key)}")
+    }
+    println("immutable- using minus")
+    for(m in myMap.minus(4)){
+        println(myMap[m.key])
+    }
+    println("immutable-using plus")
+    for(p in myMap.plus(Pair(5, "Rohan"))) {
+        println("Element at key ${p.key} = ${p.value}")
+    }
+    println("immutable-using set")
+
+        val mySet: Set<Any> = setOf(2,6,4,29,4,5,"Ashu","Ajay")
+        println(".......print Int set.........")
+        for(element in mySet){
+            println(element)
+
+            println("...mySet.contains\"Ashu\"...")
+            println(mySet.contains("Ashu"))
+            println(mySet.drop(2))
+        }
+}
