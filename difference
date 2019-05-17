@@ -1,0 +1,12 @@
+abstract 
+a class can only extent 1 abstract class but many interface class
+abstract we say it as A=b if it says a extends b 
+whereas in implements it is a has abc
+interface keeps final value ,abstract may support non final values
+
+interface provides full abstraction
+interface is designed to add some features to the app and not for super class 
+
+so basically interface is ablity to define behavior od an object without
+specifying that behavior which is to be implemented
+
